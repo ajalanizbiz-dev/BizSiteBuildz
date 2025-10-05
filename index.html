@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BizSiteBuildz — Build Stunning Websites</title>
+  <meta name="description" content="Custom, managed websites with unlimited small updates. $600 setup + $100/mo." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    :focus-visible { outline: 2px solid rgb(56 189 248); outline-offset: 2px; }
+    .card { box-shadow: 0 0 40px -18px rgba(56,189,248,.55); }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/logo-badge.png" alt="BizSiteBuildz logo" class="w-9 h-9 rounded-2xl object-cover">
+        <span class="font-semibold text-lg tracking-tight drop-shadow-[0_0_12px_rgba(59,130,246,0.6)]">BizSiteBuildz</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a href="#features" class="hover:text-white">Features</a>
+        <a href="#pricing" class="hover:text-white">Pricing</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+        <a href="apply.html" class="hover:text-white">Apply</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 rounded-xl border border-white/10" aria-label="Open menu">≡</button>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-white/10 bg-slate-950/95">
+      <nav class="max-w-6xl mx-auto px-4 py-3 grid gap-3 text-slate-300">
+        <a href="#features" class="hover:text-white">Features</a>
+        <a href="#pricing" class="hover:text-white">Pricing</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+        <a href="apply.html" class="hover:text-white">Apply</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 h-[480px] w-[680px] rounded-full blur-3xl opacity-40 bg-[radial-gradient(closest-side,_rgba(99,102,241,0.45),_transparent)]"></div>
+    <div class="relative max-w-4xl mx-auto px-6 py-16 text-center">
+      <h1 class="text-5xl md:text-6xl font-black leading-[1.05] mx-auto max-w-3xl bg-gradient-to-br from-indigo-300 via-purple-300 to-sky-300 bg-clip-text text-transparent drop-shadow-[0_0_18px_rgba(124,58,237,0.35)]">
+        Build Stunning Websites
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl mx-auto">
+        Professional website development with <span class="text-slate-100 font-medium">unlimited small updates</span>. From concept to launch in days, not months.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="apply.html" class="relative inline-block px-6 py-3 rounded-full font-semibold text-slate-900 bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500 shadow-[0_0_30px_-6px_rgba(56,189,248,0.9)] hover:shadow-[0_0_40px_-4px_rgba(56,189,248,0.8)] hover:scale-[1.03] transition transform">
+          <span class="relative z-10">Apply</span>
+          <span class="absolute inset-0 rounded-full bg-gradient-to-r from-sky-300/30 via-sky-400/30 to-indigo-400/30 blur-xl opacity-70"></span>
+        </a>
+        <a href="#features" class="px-6 py-3 rounded-full border border-white/15 bg-white/5 hover:bg-white/10">View Examples</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-14">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-10">
+        <h2 class="text-3xl font-bold">Everything you need — managed for you</h2>
+        <p class="text-slate-300 mt-2">We combine custom design with hands-on support so your site keeps working hard for your business.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_30px_-16px_rgba(255,255,255,0.4)] hover:shadow-[0_0_40px_-12px_rgba(56,189,248,0.6)] transition-shadow">
+          <div class="aspect-square w-full rounded-2xl bg-slate-900/60 flex items-center justify-center overflow-hidden mb-4">
+            <img src="assets/tailored.png" alt="Tailored web design" class="w-3/4 h-3/4 object-contain drop-shadow-[0_0_18px_rgba(56,189,248,0.45)]" />
+          </div>
+          <h3 class="font-semibold text-lg">Tailored web design</h3>
+          <p class="text-slate-300 text-sm mt-1">Each site is custom-built and aligned to your brand and goals.</p>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_30px_-16px_rgba(255,255,255,0.4)] hover:shadow-[0_0_40px_-12px_rgba(56,189,248,0.6)] transition-shadow">
+          <div class="aspect-square w-full rounded-2xl bg-slate-900/60 flex items-center justify-center overflow-hidden mb-4">
+            <img src="assets/updates.png" alt="Unlimited updates" class="w-3/4 h-3/4 object-contain drop-shadow-[0_0_18px_rgba(56,189,248,0.45)]" />
+          </div>
+          <h3 class="font-semibold text-lg">Unlimited updates</h3>
+          <p class="text-slate-300 text-sm mt-1">Send content or change requests anytime. Unlimited small updates each month.</p>
+        </div>
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_30px_-16px_rgba(255,255,255,0.4)] hover:shadow-[0_0_40px_-12px_rgba(56,189,248,0.6)] transition-shadow">
+          <div class="aspect-square w-full rounded-2xl bg-slate-900/60 flex items-center justify-center overflow-hidden mb-4">
+            <img src="assets/hosting.png" alt="Hosting & support" class="w-3/4 h-3/4 object-contain drop-shadow-[0_0_18px_rgba(56,189,248,0.45)]" />
+          </div>
+          <h3 class="font-semibold text-lg">Hosting & support</h3>
+          <p class="text-slate-300 text-sm mt-1">Fast, secure hosting plus proactive monitoring and friendly support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-6">
+        <div class="relative rounded-[22px] border border-white/10 bg-slate-900/70 p-8 card">
+          <h3 class="text-center text-2xl font-semibold text-sky-300">Setup</h3>
+          <div class="mt-3 text-center">
+            <div class="text-5xl md:text-6xl font-black text-sky-300 drop-shadow-[0_0_25px_rgba(56,189,248,0.55)]">$600</div>
+            <div class="text-slate-400 mt-1">One-time fee</div>
+          </div>
+          <ul class="mt-8 space-y-3 text-slate-200 text-lg">
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Custom design & development</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Mobile responsive</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> SEO optimization</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> SSL certificate & hosting setup</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Up to 5 pages at launch (Home, About, Services, Pricing, Contact)</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Contact form + spam protection</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Google Analytics 4 installed</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> One revision cycle after first draft</li>
+          </ul>
+          <a href="https://buy.stripe.com/test_eVq14o7KC27w8qVei65gc02" target="_blank" rel="noopener noreferrer"
+             class="mt-8 inline-block w-full text-center px-6 py-3 rounded-full font-semibold text-slate-900 bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500 hover:scale-[1.02] transition">
+            Start setup
+          </a>
+        </div>
+        <div class="relative rounded-[22px] border border-sky-500 bg-slate-900/70 p-8 shadow-[0_0_40px_-8px_rgba(14,165,233,0.7)]">
+          <div class="absolute -top-3 left-6 bg-sky-500 text-slate-900 text-xs px-3 py-1 rounded-full">Most Popular</div>
+          <h3 class="text-center text-2xl font-semibold text-sky-300">Monthly</h3>
+          <div class="mt-3 text-center">
+            <div class="text-5xl md:text-6xl font-black text-sky-300 drop-shadow-[0_0_25px_rgba(56,189,248,0.55)]">$100</div>
+            <div class="text-slate-400 mt-1">per month</div>
+          </div>
+          <ul class="mt-8 space-y-3 text-slate-200 text-lg">
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Unlimited small updates</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Content changes (text, images, pricing)</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> New sections & landing pages (lightweight)</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Security updates & performance tuning</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Uptime monitoring & monthly health checks</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Automatic backups</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Priority support (24–48h turnaround)</li>
+            <li class="flex gap-3"><span class="text-emerald-400">✔</span> Cancel anytime</li>
+          </ul>
+          <a href="https://buy.stripe.com/test_eVq14o7KC27w8qVei65gc02" target="_blank" rel="noopener noreferrer"
+             class="mt-8 inline-block w-full text-center px-6 py-3 rounded-full font-semibold text-slate-900 bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500 hover:scale-[1.02] transition">
+            Subscribe
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 border-t border-white/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold">Tell us about your site</h2>
+        <p class="text-slate-400 mt-2">Answer a few questions and we’ll send a free preview.</p>
+      </div>
+      <form onsubmit="event.preventDefault()" class="mt-10 max-w-2xl mx-auto grid gap-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input required placeholder="Your name" class="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+          <input required type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+        </div>
+        <input placeholder="Business name" class="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500" />
+        <textarea rows="5" placeholder="What do you need? Pages, style, examples…" class="w-full px-4 py-3 rounded-xl border border-white/10 bg-white/5 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500"></textarea>
+        <div class="flex items-center justify-center gap-3">
+          <button class="px-5 py-3 rounded-2xl bg-sky-500 text-slate-900 font-semibold hover:bg-sky-400">Send Request</button>
+          <span class="text-xs text-slate-400">We reply within 24 hours.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-10 text-sm text-slate-400">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div>© <span id="yr"></span> BizSiteBuildz. All rights reserved.</div>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-slate-200">Privacy</a>
+        <a href="#" class="hover:text-slate-200">Terms</a>
+        <a href="#contact" class="hover:text-slate-200">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-6 right-6 z-50">
+    <div class="hidden sm:flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 backdrop-blur px-4 py-3 shadow-[0_10px_40px_-10px_rgba(56,189,248,0.6)]">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="text-emerald-300" aria-hidden="true">
+        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="1.6"/>
+        <circle cx="12" cy="12" r="3" fill="currentColor"/>
+      </svg>
+      <span class="text-slate-200 text-sm">Ready to start?</span>
+      <a href="https://buy.stripe.com/test_eVq14o7KC27w8qVei65gc02" target="_blank" rel="noopener noreferrer"
+         class="relative inline-block px-6 py-3 rounded-full font-semibold text-slate-900 bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500 shadow-[0_0_30px_-6px_rgba(56,189,248,0.9)] hover:shadow-[0_0_40px_-4px_rgba(56,189,248,0.8)] hover:scale-[1.03] transition transform" aria-label="Checkout">
+        <span class="relative z-10">Checkout</span>
+        <span class="absolute inset-0 rounded-full bg-gradient-to-r from-sky-300/30 via-sky-400/30 to-indigo-400/30 blur-xl opacity-70"></span>
+      </a>
+    </div>
+    <a href="https://buy.stripe.com/test_eVq14o7KC27w8qVei65gc02" target="_blank" rel="noopener noreferrer"
+       class="sm:hidden inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-sky-500 to-indigo-500 shadow-[0_10px_40px_-10px_rgba(56,189,248,0.8)]" aria-label="Open Stripe checkout">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    </a>
+  </div>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+    menuBtn.addEventListener("click", ()=> mobileMenu.classList.toggle("hidden"));
+  </script>
+</body>
+</html>
