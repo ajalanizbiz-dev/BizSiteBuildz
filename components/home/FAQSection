@@ -1,0 +1,86 @@
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+const faqs = [
+  {
+    question: "What counts as a 'small update'?",
+    answer: "Small updates include text changes, image replacements, pricing updates, adding new sections to existing pages, minor design tweaks, and bug fixes. Basically, anything that doesn't require a complete page redesign or major structural changes."
+  },
+  {
+    question: "How long does the initial setup take?",
+    answer: "Most websites are completed within 7-14 days after we receive all necessary content and assets. We'll provide a detailed timeline during our initial consultation based on your specific requirements."
+  },
+  {
+    question: "Can I cancel my monthly subscription?",
+    answer: "Yes! There are no long-term contracts. You can cancel your monthly subscription at any time. Your website will remain live, but you won't be able to request new updates after cancellation."
+  },
+  {
+    question: "What if I need a major redesign later?",
+    answer: "Major redesigns or adding complex functionality may require an additional project fee, which we'll discuss and quote separately. However, many incremental improvements can be done through your monthly updates."
+  },
+  {
+    question: "Do you provide hosting?",
+    answer: "Yes! Hosting is included in your monthly subscription. We use fast, secure hosting with automatic backups, SSL certificates, and 99.9% uptime guarantee."
+  },
+  {
+    question: "Will I own my website?",
+    answer: "Yes, you own all the content and we can provide you with all files if you decide to host elsewhere. However, ongoing maintenance and updates would then be your responsibility."
+  },
+  {
+    question: "What if I need more than 5 pages initially?",
+    answer: "No problem! We can add additional pages to your initial setup for an extra fee. Contact us to discuss your specific needs and we'll provide a custom quote."
+  },
+  {
+    question: "How do I request updates?",
+    answer: "Simply email us with your update requests. We typically respond within 24-48 hours and most updates are completed within a few business days, depending on complexity."
+  }
+];
+
+export default function FAQSection() {
+  return (
+    <section id="faq" className="py-24 md:py-32 border-t border-white/10">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
+            Frequently Asked Questions
+          </h2>
+          <p className="text-xl text-slate-400 mt-4">
+            Everything you need to know about our services
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="border border-white/10 rounded-2xl px-6 bg-white/5 hover:bg-white/10 transition-colors"
+              >
+                <AccordionTrigger className="text-left text-white hover:no-underline py-6">
+                  <span className="text-lg font-semibold pr-4">{faq.question}</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-slate-300 pb-6 leading-relaxed">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </motion.div>
+      </div>
